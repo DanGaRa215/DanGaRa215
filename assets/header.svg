@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="DanGaRa215 - Data Science Student">
+  <title>DanGaRa215 - Data Science Student</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="38%"  stop-color="#FFE3F1"/>
+      <stop offset="72%"  stop-color="#FFA8D7"/>
+      <stop offset="100%" stop-color="#FF5FB5"/>
+    </linearGradient>
+    <linearGradient id="tail" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%"   stop-color="#D6117E" stop-opacity="1"/>
+      <stop offset="30%"  stop-color="#FF4FB6" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FF9FD8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="60%"  stop-color="#FF9FD8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FF9FD8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+
+    <!-- 尾は進行方向（右下 / 約25度）の真後ろ = 左上 に伸ばす -->
+    <g id="star">
+      <path d="M0 0 L-100 -46" stroke="url(#tail)" stroke-width="3" stroke-linecap="round" filter="url(#soft)"/>
+      <path d="M0 0 L-72 -33"  stroke="#D6117E" stroke-width="1.2" stroke-linecap="round" opacity="0.85"/>
+      <circle r="8" fill="url(#halo)"/>
+      <circle r="2.6" fill="#FFFFFF" stroke="#FF4FB6" stroke-width="0.8"/>
+    </g>
+  </defs>
+
+  <rect width="900" height="260" fill="url(#bg)"/>
+
+  <!-- きらめき -->
+  <g fill="#FF6EC7">
+    <circle cx="72"  cy="48"  r="1.6"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="176" cy="106" r="1.2"><animate attributeName="opacity" values="0.9;0.1;0.9"  dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="262" cy="36"  r="1.8"><animate attributeName="opacity" values="0.2;0.9;0.2"  dur="2.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="452" cy="58"  r="1.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></circle>
+    <circle cx="678" cy="42"  r="1.7"><animate attributeName="opacity" values="0.2;0.9;0.2"  dur="2.6s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="800" cy="90"  r="1.3"><animate attributeName="opacity" values="0.9;0.15;0.9" dur="3.3s" repeatCount="indefinite"/></circle>
+  </g>
+  <g fill="#FFFFFF">
+    <circle cx="368" cy="188" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.0s" repeatCount="indefinite"/></circle>
+    <circle cx="596" cy="214" r="1.3"><animate attributeName="opacity" values="1;0.25;1" dur="3.7s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="222" r="1.5"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.7s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="828" cy="196" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="3.4s" begin="1.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- 流れ星 1 -->
+  <use href="#star" xlink:href="#star" opacity="0">
+    <animateTransform attributeName="transform" type="translate"
+      values="160,-40; 160,-40; 570,150; 570,150"
+      keyTimes="0;0.06;0.34;1" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0"
+      keyTimes="0;0.06;0.10;0.30;0.34;1" dur="6s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- 流れ星 2 -->
+  <use href="#star" xlink:href="#star" opacity="0">
+    <animateTransform attributeName="transform" type="translate"
+      values="540,-30; 540,-30; 910,145; 910,145"
+      keyTimes="0;0.05;0.30;1" dur="6s" begin="2.1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0"
+      keyTimes="0;0.05;0.09;0.26;0.30;1" dur="6s" begin="2.1s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- 流れ星 3（小）
+       animateTransform type="translate" は transform 属性ごと置き換えるため、
+       scale は <use> 側に持たせ、translate は外側の <g> に当てる -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="70,70; 70,70; 340,200; 340,200"
+      keyTimes="0;0.05;0.26;1" dur="6s" begin="4.3s" repeatCount="indefinite"/>
+    <use href="#star" xlink:href="#star" transform="scale(0.62)" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.9;0.9;0;0"
+        keyTimes="0;0.05;0.08;0.22;0.26;1" dur="6s" begin="4.3s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- テキスト -->
+  <g text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <text x="450" y="128" font-size="52" font-weight="700" fill="#B8005E" letter-spacing="4">DanGaRa215</text>
+    <text x="450" y="162" font-size="15" font-weight="600" fill="#FFFFFF" letter-spacing="7">DATA SCIENCE STUDENT</text>
+    <text x="450" y="198" font-size="14" fill="#FFFFFF" letter-spacing="1" opacity="0.92">問いを見つけたら、まず動く。</text>
+  </g>
+</svg>

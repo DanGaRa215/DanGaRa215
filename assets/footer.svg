@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" role="img" aria-label="footer">
+  <title>footer</title>
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="1" x2="0.3" y2="0">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="45%"  stop-color="#FFD3EA"/>
+      <stop offset="100%" stop-color="#FF5FB5"/>
+    </linearGradient>
+    <linearGradient id="ftail" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%"   stop-color="#D6117E"/>
+      <stop offset="100%" stop-color="#FF9FD8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 42 C 180 4, 320 84, 480 46 C 640 8, 760 70, 900 34 L900 120 L0 120 Z" fill="url(#fbg)"/>
+  <g opacity="0">
+    <!-- 尾は進行方向（右下）の真後ろ = 左上 に伸ばす -->
+    <path d="M0 0 L-70 -32" stroke="url(#ftail)" stroke-width="2.4" stroke-linecap="round"/>
+    <circle r="2.2" fill="#FFFFFF"/>
+    <animateTransform attributeName="transform" type="translate"
+      values="640,10; 640,10; 880,120; 880,120" keyTimes="0;0.1;0.35;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1;0.14;0.31;0.35;1" dur="7s" repeatCount="indefinite"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+[
+  {
+    "type": "normal",
+    "fileName": "profile-pink.svg",
+    "backgroundColor": "#FFFFFF",
+    "foregroundColor": "#B8005E",
+    "strongColor": "#D6117E",
+    "weakColor": "#F0A9CB",
+    "radarColor": "#FF6EC7",
+    "growingAnimation": true,
+    "contribColors": [
+      "#FFF0F7",
+      "#FFCFE7",
+      "#FF9FD3",
+      "#FF5FB5",
+      "#D6117E"
+    ]
+  }
+]
