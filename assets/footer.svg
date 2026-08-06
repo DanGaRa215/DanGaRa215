@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" role="img" aria-label="footer">
   <title>footer</title>
   <defs>
+    <!-- 下端の色は白ではなくピンク。透明化は fMask が担当するため、
+         ここを白にすると「白 x 半透明」でダークモード時にグレーへ濁る -->
     <linearGradient id="fbg" x1="0" y1="1" x2="0.3" y2="0">
-      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="0%"   stop-color="#FFD3EA"/>
       <stop offset="45%"  stop-color="#FFD3EA"/>
       <stop offset="100%" stop-color="#FF5FB5"/>
     </linearGradient>
@@ -10,8 +12,20 @@
       <stop offset="0%"   stop-color="#D6117E"/>
       <stop offset="100%" stop-color="#FF9FD8" stop-opacity="0"/>
     </linearGradient>
+
+    <!-- 下端を幅いっぱい均一に透明へ落とすための縦マスク。
+         色グラデーション(fbg)は斜めなので、そのままだと端まで透けきらない。
+         ライトモードでは白背景が透けて従来と同じ見た目、ダークモードでは暗い背景に溶ける -->
+    <linearGradient id="fFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="42%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <mask id="fMask">
+      <rect width="900" height="120" fill="url(#fFade)"/>
+    </mask>
   </defs>
-  <path d="M0 42 C 180 4, 320 84, 480 46 C 640 8, 760 70, 900 34 L900 120 L0 120 Z" fill="url(#fbg)"/>
+  <path d="M0 42 C 180 4, 320 84, 480 46 C 640 8, 760 70, 900 34 L900 120 L0 120 Z" fill="url(#fbg)" mask="url(#fMask)"/>
   <g opacity="0">
     <!-- 尾は進行方向（右下）の真後ろ = 左上 に伸ばす -->
     <path d="M0 0 L-70 -32" stroke="url(#ftail)" stroke-width="2.4" stroke-linecap="round"/>

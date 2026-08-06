@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="DanGaRa215 - Data Science Student">
   <title>DanGaRa215 - Data Science Student</title>
   <defs>
+    <!-- 上端は白のまま。タイトル(#B8005E)が濃色なので、
+         ここを透過させるとダークモードで文字が読めなくなる -->
     <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
       <stop offset="0%"   stop-color="#FFFFFF"/>
       <stop offset="38%"  stop-color="#FFE3F1"/>
