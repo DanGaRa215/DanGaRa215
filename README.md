@@ -29,11 +29,6 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://img.shields.io/badge/Python-D6117E?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/SQL-FF5FB5?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
 
-| 技術 | どこで使ったか |
-| :--- | :--- |
-| Python | 授業・インターン・研究で幅広く活用。データ分析から機械学習モデルの構築まで対応 |
-| SQL | データ抽出・集計クエリの作成 |
-
 <br />
 
 ### フレームワーク / ライブラリ
@@ -43,14 +38,6 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://img.shields.io/badge/pandas-D6117E?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas" />
 <img src="https://img.shields.io/badge/NumPy-FF5FB5?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
 <img src="https://img.shields.io/badge/Matplotlib-FF9FD3?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
-
-| 技術 | どこで使ったか |
-| :--- | :--- |
-| PyTorch | NLP・推薦系のモデル実装と学習 |
-| scikit-learn | 前処理・特徴量設計とベースラインモデルの構築、評価 |
-| pandas | データの整形・結合・集計といった前処理全般 |
-| NumPy | 数値計算とベクトル・行列演算の実装 |
-| Matplotlib | 分析結果の可視化とレポート用の図の作成 |
 
 <br />
 
@@ -62,13 +49,6 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://img.shields.io/badge/Google%20Colab-FF5FB5?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
 <img src="https://img.shields.io/badge/VS%20Code-FF9FD3?style=for-the-badge&logoColor=white" alt="VS Code" />
 
-| 技術 | どこで使ったか |
-| :--- | :--- |
-| Git / GitHub | インターン・個人開発でのバージョン管理とレビュー |
-| Docker | 分析環境の再現性を担保するためのコンテナ構築 |
-| Google Colab | GPU を使ったモデル学習と実験の試行 |
-| VS Code | 日常的な開発・デバッグの主環境 |
-
 <br />
 
 ### 学習中 / 関心領域
@@ -78,14 +58,17 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://img.shields.io/badge/Recommender%20Systems-D6117E?style=for-the-badge&logo=databricks&logoColor=white" alt="Recommender Systems" />
 <img src="https://img.shields.io/badge/MLOps-FF5FB5?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLOps" />
 
-| 技術 | どこで使ったか |
-| :--- | :--- |
-| LLM / RAG | 社内文書を対象とした検索拡張生成の検証 |
-| Hugging Face | 事前学習済みモデルのファインチューニングと推論 |
-| 推薦システム | 協調フィルタリングと系列推薦の実装・比較 |
-| MLOps | 実験管理とモデルのデプロイ運用を学習中 |
-
 <br />
+
+<!-- ===== 一時的に非表示 : ここから =====================================
+     画像がまだ存在せず、壊れたアイコンが表示されるため囲っている。
+     生成されたらこのコメントの開始行と終了行の2行を消すだけで復活する。
+
+     Contribution : .github/workflows/ の2つが未成功。
+                    GitHub Actions の大規模障害 (2026-08-06) で
+                    snake=failure / 3D=cancelled。障害復旧後に再実行すれば生成される。
+     Stats        : github-readme-stats の公開インスタンスが DEPLOYMENT_PAUSED で
+                    全ユーザー 503。復旧待ち、または自前 Vercel へデプロイして URL 差し替え。
 
 ## <img src="https://img.shields.io/badge/-Contribution-FF5FB5?style=flat-square" height="22" /> Contribution
 
@@ -101,6 +84,7 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DanGaRa215&layout=compact&count_private=true&hide_border=true&bg_color=FFFFFF&title_color=D6117E&text_color=B8005E&icon_color=FF5FB5" alt="Top languages" height="165" />
 
 <br />
+     ===== 一時的に非表示 : ここまで ===================================== -->
 
 <img src="./assets/footer.svg" alt="Thanks for visiting!" width="100%" />
 
