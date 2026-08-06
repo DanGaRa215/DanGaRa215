@@ -1,0 +1,38 @@
+# 一時的な切り分け用ワークフロー（確認後に削除する）
+# 「Actions が動かないのは設定のせいか、GitHub 側の障害か」を切り分ける。
+#   bare        : アクションを一切使わない。落ちたらランナー基盤の問題
+#   first_party : actions/checkout のみ。落ちたらアクション解決サービスの問題
+#   third_party : 外部アクション。ここだけ落ちるなら allowed_actions の設定問題
+name: Canary
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bare:
+    name: 1-bare (アクション未使用)
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "runner is alive"
+
+  first_party:
+    name: 2-first-party (actions/checkout のみ)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: echo "first-party action resolved"
+
+  third_party:
+    name: 3-third-party (外部アクション)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: canary-dryrun
+          build_dir: .
+          dry_run: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
