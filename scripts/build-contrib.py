@@ -61,23 +61,13 @@ def main() -> int:
   <title>{USER} contribution calendar</title>
   <desc>{cells} cells from {SRC}</desc>
 
-  <defs>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#FF9FD3"/>
-      <stop offset="50%"  stop-color="#D6117E"/>
-      <stop offset="100%" stop-color="#FF9FD3"/>
-    </linearGradient>
-  </defs>
-
   <!-- 白のカード。草の空セルが #eeeeee、ラベルが #767676 なので、
        ダークテーマでも読めるよう下地は白のまま置く -->
   <rect x="1.5" y="1.5" width="{w - 3}" height="{h - 3}" rx="14"
         fill="#FFFFFF" stroke="#FF5FB5" stroke-width="3"/>
 
-  <!-- 見出しと、下端のアクセントライン -->
   <text x="{PAD_X}" y="30" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="13" font-weight="700" fill="#D6117E" letter-spacing="2.4">CONTRIBUTIONS</text>
-  <rect x="{PAD_X}" y="{h - 17}" width="{cw}" height="2.5" rx="1.25" fill="url(#edge)"/>
 
   <!-- 四隅のピンクの飾り -->
   <g stroke="#D6117E" stroke-width="3" stroke-linecap="round" fill="none">
