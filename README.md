@@ -61,9 +61,7 @@ Motto : 手を動かし、最後まで届ける
 
 ## <img src="https://img.shields.io/badge/-Contribution-FF5FB5?style=flat-square" height="22" /> Contribution
 
-<img src="./profile-3d-contrib/profile-pink.svg" alt="3D contribution graph" width="100%" />
-
-<img src="https://raw.githubusercontent.com/DanGaRa215/DanGaRa215/output/snake.svg" alt="Snake animation of contribution graph" width="100%" />
+<img src="./assets/contrib.svg" alt="Contribution calendar" width="100%" />
 
 <br />
 
