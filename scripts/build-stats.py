@@ -7,8 +7,13 @@ github-readme-stats の公開インスタンスが長期停止したため、外
   assets/stats.svg  統計カード
   assets/langs.svg  使用言語カード
 
-環境変数 GITHUB_TOKEN が必要（Actions では secrets.GITHUB_TOKEN、
-ローカルでは `GITHUB_TOKEN=$(gh auth token)` で渡す）。
+環境変数 GITHUB_TOKEN が必要。
+
+Actions の secrets.GITHUB_TOKEN はこのリポジトリのスコープしか持たないため、
+ユーザー全体の PR / Issue / Contributed to が過少にカウントされる
+（実測: PR 81->41, Issues 32->5, Contributed to 8->4）。
+正しい値を出すには read:user を持つ PAT をリポジトリシークレット STATS_TOKEN
+に登録する。ローカル実行時は `GITHUB_TOKEN=$(gh auth token)` で渡す。
 """
 
 import json

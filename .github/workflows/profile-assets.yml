@@ -25,9 +25,14 @@ jobs:
       - name: Build assets/contrib.svg
         run: python3 scripts/build-contrib.py "${{ github.repository_owner }}" assets/contrib.svg
 
+      # secrets.GITHUB_TOKEN はこのリポジトリのスコープしか持たないため、
+      # ユーザー全体の PR / Issue / Contributed to が過少にカウントされる
+      # (実測: PR 81->41, Issues 32->5, Contributed to 8->4)。
+      # 正しい値にするには read:user を持つ PAT を STATS_TOKEN として登録する。
+      # 未登録でも GITHUB_TOKEN にフォールバックして動作は継続する。
       - name: Build assets/stats.svg and assets/langs.svg
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
         run: python3 scripts/build-stats.py "${{ github.repository_owner }}" assets
 
       - name: Commit & Push
