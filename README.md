@@ -59,16 +59,6 @@ Motto : 手を動かし、最後まで届ける
 
 <br />
 
-<!-- ===== 一時的に非表示 : ここから =====================================
-     画像がまだ存在せず、壊れたアイコンが表示されるため囲っている。
-     生成されたらこのコメントの開始行と終了行の2行を消すだけで復活する。
-
-     Contribution : .github/workflows/ の2つが未成功。
-                    GitHub Actions の大規模障害 (2026-08-06) で
-                    snake=failure / 3D=cancelled。障害復旧後に再実行すれば生成される。
-     Stats        : github-readme-stats の公開インスタンスが DEPLOYMENT_PAUSED で
-                    全ユーザー 503。復旧待ち、または自前 Vercel へデプロイして URL 差し替え。
-
 ## <img src="https://img.shields.io/badge/-Contribution-FF5FB5?style=flat-square" height="22" /> Contribution
 
 <img src="./profile-3d-contrib/profile-pink.svg" alt="3D contribution graph" width="100%" />
@@ -76,6 +66,15 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://raw.githubusercontent.com/DanGaRa215/DanGaRa215/output/snake.svg" alt="Snake animation of contribution graph" width="100%" />
 
 <br />
+
+<!-- ===== 一時的に非表示 : ここから =====================================
+     github-readme-stats の公開インスタンスが DEPLOYMENT_PAUSED のままで、
+     全ユーザーに対して 503 を返す（octocat でもルートURLでも 503）。
+     壊れたアイコンが出るため囲っている。
+     復活させるときはこのコメントの開始行と終了行の2行を消すだけでよい。
+
+     恒久策: github-readme-stats を自分の Vercel にデプロイし、
+             下記2つの URL のホスト名を差し替える。
 
 ## <img src="https://img.shields.io/badge/-Stats-FF5FB5?style=flat-square" height="22" /> Stats
 
