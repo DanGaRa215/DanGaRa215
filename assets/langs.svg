@@ -29,7 +29,7 @@
   <rect x="24" y="54" width="372" height="12" rx="6" fill="var(--track)"/>
   <g clip-path="url(#barClip)">
     <rect x="24.00" y="54" width="325.03" height="12" fill="var(--l1)"/>
-    <rect x="349.03" y="54" width="40.69" height="12" fill="var(--l2)"/>
+    <rect x="349.03" y="54" width="40.68" height="12" fill="var(--l2)"/>
     <rect x="389.71" y="54" width="3.01" height="12" fill="var(--l3)"/>
     <rect x="392.72" y="54" width="1.10" height="12" fill="var(--l4)"/>
     <rect x="393.82" y="54" width="1.07" height="12" fill="var(--l5)"/>
