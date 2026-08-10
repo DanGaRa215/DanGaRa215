@@ -28,25 +28,25 @@
   <defs><clipPath id="barClip"><rect x="24" y="54" width="372" height="12" rx="6"/></clipPath></defs>
   <rect x="24" y="54" width="372" height="12" rx="6" fill="var(--track)"/>
   <g clip-path="url(#barClip)">
-    <rect x="24.00" y="54" width="327.52" height="12" fill="var(--l1)"/>
-    <rect x="351.52" y="54" width="32.66" height="12" fill="var(--l2)"/>
-    <rect x="384.19" y="54" width="5.07" height="12" fill="var(--l3)"/>
-    <rect x="389.26" y="54" width="4.20" height="12" fill="var(--l4)"/>
-    <rect x="393.46" y="54" width="1.31" height="12" fill="var(--l5)"/>
+    <rect x="24.00" y="54" width="325.03" height="12" fill="var(--l1)"/>
+    <rect x="349.03" y="54" width="40.69" height="12" fill="var(--l2)"/>
+    <rect x="389.71" y="54" width="3.01" height="12" fill="var(--l3)"/>
+    <rect x="392.72" y="54" width="1.10" height="12" fill="var(--l4)"/>
+    <rect x="393.82" y="54" width="1.07" height="12" fill="var(--l5)"/>
   </g>
   <rect x="24" y="87" width="10" height="10" rx="2.5" fill="var(--l1)" stroke="#FF5FB5" stroke-width="0.8"/>
   <text x="42" y="96" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Python</text>
-  <text x="396" y="96" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">88.0%</text>
+  <text x="396" y="96" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">87.4%</text>
   <rect x="24" y="109" width="10" height="10" rx="2.5" fill="var(--l2)" stroke="#FF5FB5" stroke-width="0.8"/>
   <text x="42" y="118" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Jupyter Notebook</text>
-  <text x="396" y="118" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">8.8%</text>
+  <text x="396" y="118" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">10.9%</text>
   <rect x="24" y="131" width="10" height="10" rx="2.5" fill="var(--l3)" stroke="#FF5FB5" stroke-width="0.8"/>
-  <text x="42" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">C++</text>
-  <text x="396" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">1.4%</text>
+  <text x="42" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Cython</text>
+  <text x="396" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">0.8%</text>
   <rect x="24" y="153" width="10" height="10" rx="2.5" fill="var(--l4)" stroke="#FF5FB5" stroke-width="0.8"/>
-  <text x="42" y="162" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Cython</text>
-  <text x="396" y="162" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">1.1%</text>
+  <text x="42" y="162" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">C</text>
+  <text x="396" y="162" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">0.3%</text>
   <rect x="24" y="175" width="10" height="10" rx="2.5" fill="var(--l5)" stroke="#FF5FB5" stroke-width="0.8"/>
-  <text x="42" y="184" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">C</text>
-  <text x="396" y="184" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">0.4%</text>
+  <text x="42" y="184" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">C++</text>
+  <text x="396" y="184" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">0.3%</text>
 </svg>

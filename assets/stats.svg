@@ -35,14 +35,14 @@
   <rect x="16" y="97" width="388" height="22" rx="5" fill="var(--stripe)"/>
   <circle cx="27" cy="106" r="3" fill="var(--dot)"/>
   <text x="38" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Pull Requests (merged)</text>
-  <text x="396" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">81</text>
+  <text x="396" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">41</text>
   <circle cx="27" cy="130" r="3" fill="var(--dot)"/>
   <text x="38" y="134" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Issues</text>
-  <text x="396" y="134" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">32</text>
+  <text x="396" y="134" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">5</text>
   <rect x="16" y="145" width="388" height="22" rx="5" fill="var(--stripe)"/>
   <circle cx="27" cy="154" r="3" fill="var(--dot)"/>
   <text x="38" y="158" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Contributed to</text>
-  <text x="396" y="158" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">8</text>
+  <text x="396" y="158" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">4</text>
   <circle cx="27" cy="178" r="3" fill="var(--dot)"/>
   <text x="38" y="182" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Followers</text>
   <text x="396" y="182" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">5</text>
