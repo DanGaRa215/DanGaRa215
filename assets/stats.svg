@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" role="img" aria-label="DanGaRa215 GitHub stats">
+  <title>DanGaRa215 GitHub stats</title>
+  <style>
+    svg {
+      --head: #D6117E; --text: #B8005E; --value: #D6117E;
+      --stripe: #FFF0F7; --track: #FFF0F7; --dot: #FF5FB5;
+      --l1: #B8005E; --l2: #D6117E; --l3: #FF6EC7; --l4: #FF9FD3; --l5: #FFCFE7;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --head: #FF6EC7; --text: #FF9FD3; --value: #FF6EC7;
+        --stripe: rgba(255, 95, 181, 0.10); --track: rgba(255, 95, 181, 0.12); --dot: #FF6EC7;
+        --l1: #FFCFE7; --l2: #FF9FD3; --l3: #FF6EC7; --l4: #FF5FB5; --l5: #D6117E;
+      }
+    }
+  </style>
+
+  <rect x="1.5" y="1.5" width="417" height="207" rx="14"
+        fill="none" stroke="#FF5FB5" stroke-width="3"/>
+  <g stroke="var(--head)" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M14 34 L14 20 Q14 14 20 14 L40 14"/>
+    <path d="M380 14 L400 14 Q406 14 406 20 L406 34"/>
+    <path d="M14 176 L14 190 Q14 196 20 196 L40 196"/>
+    <path d="M380 196 L400 196 Q406 196 406 190 L406 176"/>
+  </g>
+  <text x="24" y="34" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700"
+        fill="var(--head)" letter-spacing="2.4">GITHUB STATS</text>
+  <rect x="16" y="49" width="388" height="22" rx="5" fill="var(--stripe)"/>
+  <circle cx="27" cy="58" r="3" fill="var(--dot)"/>
+  <text x="38" y="62" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Total Stars</text>
+  <text x="396" y="62" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">2</text>
+  <circle cx="27" cy="82" r="3" fill="var(--dot)"/>
+  <text x="38" y="86" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Commits (last year)</text>
+  <text x="396" y="86" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">193</text>
+  <rect x="16" y="97" width="388" height="22" rx="5" fill="var(--stripe)"/>
+  <circle cx="27" cy="106" r="3" fill="var(--dot)"/>
+  <text x="38" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Pull Requests (merged)</text>
+  <text x="396" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">81</text>
+  <circle cx="27" cy="130" r="3" fill="var(--dot)"/>
+  <text x="38" y="134" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Issues</text>
+  <text x="396" y="134" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">32</text>
+  <rect x="16" y="145" width="388" height="22" rx="5" fill="var(--stripe)"/>
+  <circle cx="27" cy="154" r="3" fill="var(--dot)"/>
+  <text x="38" y="158" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Contributed to</text>
+  <text x="396" y="158" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">8</text>
+  <circle cx="27" cy="178" r="3" fill="var(--dot)"/>
+  <text x="38" y="182" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Followers</text>
+  <text x="396" y="182" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">5</text>
+</svg>

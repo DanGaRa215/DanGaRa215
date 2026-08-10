@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" role="img" aria-label="DanGaRa215 top languages">
+  <title>DanGaRa215 top languages</title>
+  <style>
+    svg {
+      --head: #D6117E; --text: #B8005E; --value: #D6117E;
+      --stripe: #FFF0F7; --track: #FFF0F7; --dot: #FF5FB5;
+      --l1: #B8005E; --l2: #D6117E; --l3: #FF6EC7; --l4: #FF9FD3; --l5: #FFCFE7;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --head: #FF6EC7; --text: #FF9FD3; --value: #FF6EC7;
+        --stripe: rgba(255, 95, 181, 0.10); --track: rgba(255, 95, 181, 0.12); --dot: #FF6EC7;
+        --l1: #FFCFE7; --l2: #FF9FD3; --l3: #FF6EC7; --l4: #FF5FB5; --l5: #D6117E;
+      }
+    }
+  </style>
+
+  <rect x="1.5" y="1.5" width="417" height="207" rx="14"
+        fill="none" stroke="#FF5FB5" stroke-width="3"/>
+  <g stroke="var(--head)" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M14 34 L14 20 Q14 14 20 14 L40 14"/>
+    <path d="M380 14 L400 14 Q406 14 406 20 L406 34"/>
+    <path d="M14 176 L14 190 Q14 196 20 196 L40 196"/>
+    <path d="M380 196 L400 196 Q406 196 406 190 L406 176"/>
+  </g>
+  <text x="24" y="34" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700"
+        fill="var(--head)" letter-spacing="2.4">TOP LANGUAGES</text>
+  <defs><clipPath id="barClip"><rect x="24" y="54" width="372" height="12" rx="6"/></clipPath></defs>
+  <rect x="24" y="54" width="372" height="12" rx="6" fill="var(--track)"/>
+  <g clip-path="url(#barClip)">
+    <rect x="24.00" y="54" width="327.52" height="12" fill="var(--l1)"/>
+    <rect x="351.52" y="54" width="32.66" height="12" fill="var(--l2)"/>
+    <rect x="384.19" y="54" width="5.07" height="12" fill="var(--l3)"/>
+    <rect x="389.26" y="54" width="4.20" height="12" fill="var(--l4)"/>
+    <rect x="393.46" y="54" width="1.31" height="12" fill="var(--l5)"/>
+  </g>
+  <rect x="24" y="87" width="10" height="10" rx="2.5" fill="var(--l1)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="96" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Python</text>
+  <text x="396" y="96" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">88.0%</text>
+  <rect x="24" y="109" width="10" height="10" rx="2.5" fill="var(--l2)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="118" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Jupyter Notebook</text>
+  <text x="396" y="118" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">8.8%</text>
+  <rect x="24" y="131" width="10" height="10" rx="2.5" fill="var(--l3)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">C++</text>
+  <text x="396" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">1.4%</text>
+  <rect x="24" y="153" width="10" height="10" rx="2.5" fill="var(--l4)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="162" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Cython</text>
+  <text x="396" y="162" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">1.1%</text>
+  <rect x="24" y="175" width="10" height="10" rx="2.5" fill="var(--l5)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="184" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">C</text>
+  <text x="396" y="184" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">0.4%</text>
+</svg>

@@ -6,7 +6,7 @@
 
 <a href="https://dangara215-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-FF5FB5?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
 <a href="https://github.com/DanGaRa215"><img src="https://img.shields.io/badge/GitHub-D6117E?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<img src="https://komarev.com/ghpvc/?username=DanGaRa215&style=for-the-badge&color=FF9FD3" alt="Profile views" />
+<img src="https://visitor-badge.laobi.icu/badge?page_id=DanGaRa215.DanGaRa215&style=for-the-badge&left_text=PROFILE%20VIEWS&left_color=%23D6117E&right_color=%23FF9FD3" alt="Profile views" />
 
 <br />
 
@@ -65,22 +65,12 @@ Motto : 手を動かし、最後まで届ける
 
 <br />
 
-<!-- ===== 一時的に非表示 : ここから =====================================
-     github-readme-stats の公開インスタンスが DEPLOYMENT_PAUSED のままで、
-     全ユーザーに対して 503 を返す（octocat でもルートURLでも 503）。
-     壊れたアイコンが出るため囲っている。
-     復活させるときはこのコメントの開始行と終了行の2行を消すだけでよい。
-
-     恒久策: github-readme-stats を自分の Vercel にデプロイし、
-             下記2つの URL のホスト名を差し替える。
-
 ## <img src="https://img.shields.io/badge/-Stats-FF5FB5?style=flat-square" height="22" /> Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=DanGaRa215&show_icons=true&count_private=true&hide_border=true&bg_color=FFFFFF&title_color=D6117E&text_color=B8005E&icon_color=FF5FB5" alt="GitHub stats" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DanGaRa215&layout=compact&count_private=true&hide_border=true&bg_color=FFFFFF&title_color=D6117E&text_color=B8005E&icon_color=FF5FB5" alt="Top languages" height="165" />
+<img src="./assets/stats.svg" alt="GitHub stats" height="210" />
+<img src="./assets/langs.svg" alt="Top languages" height="210" />
 
 <br />
-     ===== 一時的に非表示 : ここまで ===================================== -->
 
 <img src="./assets/footer.svg" alt="Thanks for visiting!" width="100%" />
 

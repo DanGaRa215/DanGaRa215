@@ -21,6 +21,16 @@ PAD_X = 26      # 草の左右の余白
 PAD_TOP = 44    # 見出し行のぶん上を広めに取る
 PAD_BOTTOM = 26
 
+# ghchart が inline style で持つ色 -> CSS 変数
+COLOR_VARS = {
+    "fill:#eeeeee": "--c0",   # 空セル
+    "fill:#c6e48b": "--c1",
+    "fill:#7bc96f": "--c2",
+    "fill:#239a3b": "--c3",
+    "fill:#196127": "--c4",
+    "fill:#767676": "--lbl",  # 月・曜日ラベル
+}
+
 
 def fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": f"{USER}-profile-readme"})
@@ -49,6 +59,14 @@ def main() -> int:
     inner = raw[m.end():]
     inner = inner[: inner.rindex("</svg>")].strip()
 
+    # ghchart は色を inline style で持つ。inline style は外部ルールより強いので
+    # クラスでは上書きできない。色リテラルを CSS 変数に置き換えることで、
+    # prefers-color-scheme でライト/ダークを切り替えられるようにする。
+    for literal, var in COLOR_VARS.items():
+        if literal not in inner:
+            raise RuntimeError(f"ghchart の配色が変わっている: {literal} が見つからない")
+        inner = inner.replace(literal, f"fill:var({var})")
+
     # 草のマスが1つも無い = ユーザー名の誤りやサービス側の異常。壊れた図を配ってしまうので止める。
     cells = len(re.findall(r"<rect\b", inner))
     if cells < 300:
@@ -61,16 +79,30 @@ def main() -> int:
   <title>{USER} contribution calendar</title>
   <desc>{cells} cells from {SRC}</desc>
 
-  <!-- 白のカード。草の空セルが #eeeeee、ラベルが #767676 なので、
-       ダークテーマでも読めるよう下地は白のまま置く -->
+  <style>
+    /* ライト時は GitHub 従来の緑階調そのまま。ダーク時は GitHub のダークテーマと同じ緑に差し替える。
+       閲覧者の OS/ブラウザの配色設定に追従する */
+    svg {{
+      --c0: #eeeeee; --c1: #c6e48b; --c2: #7bc96f; --c3: #239a3b; --c4: #196127;
+      --lbl: #767676; --head: #D6117E;
+    }}
+    @media (prefers-color-scheme: dark) {{
+      svg {{
+        --c0: #161b22; --c1: #0e4429; --c2: #006d32; --c3: #26a641; --c4: #39d353;
+        --lbl: #8b949e; --head: #FF6EC7;
+      }}
+    }}
+  </style>
+
+  <!-- 背景は塗らない。ページの地色（ダークなら黒、ライトなら白）がそのまま透ける -->
   <rect x="1.5" y="1.5" width="{w - 3}" height="{h - 3}" rx="14"
-        fill="#FFFFFF" stroke="#FF5FB5" stroke-width="3"/>
+        fill="none" stroke="#FF5FB5" stroke-width="3"/>
 
   <text x="{PAD_X}" y="30" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="13" font-weight="700" fill="#D6117E" letter-spacing="2.4">CONTRIBUTIONS</text>
+        font-size="13" font-weight="700" fill="var(--head)" letter-spacing="2.4">CONTRIBUTIONS</text>
 
   <!-- 四隅のピンクの飾り -->
-  <g stroke="#D6117E" stroke-width="3" stroke-linecap="round" fill="none">
+  <g stroke="var(--head)" stroke-width="3" stroke-linecap="round" fill="none">
     <path d="M14 {PAD_TOP - 8} L14 20 Q14 14 20 14 L44 14"/>
     <path d="M{w - 44} 14 L{w - 20} 14 Q{w - 14} 14 {w - 14} 20 L{w - 14} {PAD_TOP - 8}"/>
     <path d="M14 {h - PAD_BOTTOM + 4} L14 {h - 20} Q14 {h - 14} 20 {h - 14} L44 {h - 14}"/>

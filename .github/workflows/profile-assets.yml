@@ -1,0 +1,40 @@
+# README が使う SVG を日次で再生成する。
+#   assets/contrib.svg  緑のコントリビューションカレンダーをピンク枠に収めたもの
+#   assets/stats.svg    GraphQL から取った統計カード
+#   assets/langs.svg    使用言語カード
+# いずれも外部参照を持たない自己完結SVGなので、生成元が落ちても
+# README は最後に成功した図を表示し続ける。
+name: Build Profile Assets
+
+on:
+  schedule: # 03:00 JST == 18:00 UTC
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: build-profile-svgs
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Build assets/contrib.svg
+        run: python3 scripts/build-contrib.py "${{ github.repository_owner }}" assets/contrib.svg
+
+      - name: Build assets/stats.svg and assets/langs.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build-stats.py "${{ github.repository_owner }}" assets
+
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets/contrib.svg assets/stats.svg assets/langs.svg
+          if git commit -m "Update profile assets"; then
+            git push
+          fi
