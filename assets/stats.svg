@@ -31,7 +31,7 @@
   <text x="396" y="62" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">2</text>
   <circle cx="27" cy="82" r="3" fill="var(--dot)"/>
   <text x="38" y="86" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Commits (last year)</text>
-  <text x="396" y="86" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">193</text>
+  <text x="396" y="86" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">195</text>
   <rect x="16" y="97" width="388" height="22" rx="5" fill="var(--stripe)"/>
   <circle cx="27" cy="106" r="3" fill="var(--dot)"/>
   <text x="38" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Pull Requests (merged)</text>
