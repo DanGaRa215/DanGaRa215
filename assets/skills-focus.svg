@@ -1,29 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 523 38" width="523" height="38" role="img" aria-label="機械学習, 自然言語処理, データ可視化, レコメンドシステム">
   <title>機械学習, 自然言語処理, データ可視化, レコメンドシステム</title>
   <style>
+    /* ロゴだけを色で見せ、ラベルは無彩色に寄せてコントラストを付ける。
+       チップは塗りなしなので、ライト時にラベルを白にすると背景の白に溶けて
+       読めなくなる。ライトはパレット中で最も濃い #B8005E を当てる。 */
     svg {
-      --ink: #D6117E;      /* ロゴとラベル */
+      --ink: #D6117E;      /* ロゴ */
+      --label: #B8005E;    /* ラベル */
       --edge: #FF9FD3;     /* チップの枠 */
     }
     @media (prefers-color-scheme: dark) {
-      svg { --ink: #FF6EC7; --edge: #FF5FB5; }
+      svg { --ink: #FF6EC7; --label: #FFFFFF; --edge: #FF5FB5; }
     }
   </style>
 
   <g transform="translate(0.0, 0)">
     <rect x="0.75" y="0.75" width="89.6" height="36.5" rx="18.2" fill="none" stroke="var(--edge)" stroke-width="1.5"/>
-    <text x="14" y="24" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="var(--ink)">機械学習</text>
+    <text x="14" y="24" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="var(--label)">機械学習</text>
   </g>
   <g transform="translate(101.1, 0)">
     <rect x="0.75" y="0.75" width="118.2" height="36.5" rx="18.2" fill="none" stroke="var(--edge)" stroke-width="1.5"/>
-    <text x="14" y="24" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="var(--ink)">自然言語処理</text>
+    <text x="14" y="24" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="var(--label)">自然言語処理</text>
   </g>
   <g transform="translate(230.8, 0)">
     <rect x="0.75" y="0.75" width="118.2" height="36.5" rx="18.2" fill="none" stroke="var(--edge)" stroke-width="1.5"/>
-    <text x="14" y="24" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="var(--ink)">データ可視化</text>
+    <text x="14" y="24" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="var(--label)">データ可視化</text>
   </g>
   <g transform="translate(360.5, 0)">
     <rect x="0.75" y="0.75" width="161.0" height="36.5" rx="18.2" fill="none" stroke="var(--edge)" stroke-width="1.5"/>
-    <text x="14" y="24" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="var(--ink)">レコメンドシステム</text>
+    <text x="14" y="24" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="var(--label)">レコメンドシステム</text>
   </g>
 </svg>

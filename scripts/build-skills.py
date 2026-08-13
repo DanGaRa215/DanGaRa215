@@ -110,12 +110,16 @@ def fetch_icon_path(slug: str) -> str:
 
 
 STYLE = """  <style>
+    /* ロゴだけを色で見せ、ラベルは無彩色に寄せてコントラストを付ける。
+       チップは塗りなしなので、ライト時にラベルを白にすると背景の白に溶けて
+       読めなくなる。ライトはパレット中で最も濃い #B8005E を当てる。 */
     svg {
-      --ink: #D6117E;      /* ロゴとラベル */
+      --ink: #D6117E;      /* ロゴ */
+      --label: #B8005E;    /* ラベル */
       --edge: #FF9FD3;     /* チップの枠 */
     }
     @media (prefers-color-scheme: dark) {
-      svg { --ink: #FF6EC7; --edge: #FF5FB5; }
+      svg { --ink: #FF6EC7; --label: #FFFFFF; --edge: #FF5FB5; }
     }
   </style>
 """
@@ -172,7 +176,7 @@ def build(name: str, items: list) -> str:
                 tx = PAD_L + ICON + ICON_TEXT_GAP
             out.append(
                 f'    <text x="{tx}" y="{CHIP_H / 2 + 5:.0f}" font-family="{FONT}" '
-                f'font-size="{FONT_SIZE}" font-weight="600" fill="var(--ink)">{label}</text>\n'
+                f'font-size="{FONT_SIZE}" font-weight="600" fill="var(--label)">{label}</text>\n'
                 f"  </g>\n"
             )
             x += w + GAP
