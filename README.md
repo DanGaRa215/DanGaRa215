@@ -4,7 +4,8 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=FF4FB6&center=true&vCenter=true&width=640&height=64&lines=Data+Science+%7C+NLP+%7C+Recommendation;%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E7%8F%BE%E5%A0%B4%E3%82%92%E5%A4%89%E3%81%88%E3%82%8B" alt="Data Science | NLP | Recommendation / データで現場を変える" />
 
-<a href="https://dangara215-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-FF5FB5?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+<a href="https://dangara215-portfolio.vercel.app/"><img src="./assets/portfolio.svg" alt="Portfolio - dangara215-portfolio.vercel.app" width="460" /></a>
+
 <a href="https://github.com/DanGaRa215"><img src="https://img.shields.io/badge/GitHub-D6117E?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=DanGaRa215.DanGaRa215&style=for-the-badge&left_text=PROFILE%20VIEWS&left_color=%23D6117E&right_color=%23FF9FD3" alt="Profile views" />
 
