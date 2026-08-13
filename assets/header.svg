@@ -21,12 +21,14 @@
     </radialGradient>
     <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
 
-    <!-- 尾は進行方向（右下 / 約25度）の真後ろ = 左上 に伸ばす -->
+    <!-- 尾は進行方向（右下 / 約25度）の真後ろ = 左上 に伸ばす。
+         頭は5芒星。星形は上向きに固定し、尾だけが進行方向を向く -->
     <g id="star">
       <path d="M0 0 L-100 -46" stroke="url(#tail)" stroke-width="3" stroke-linecap="round" filter="url(#soft)"/>
       <path d="M0 0 L-72 -33"  stroke="#D6117E" stroke-width="1.2" stroke-linecap="round" opacity="0.85"/>
-      <circle r="8" fill="url(#halo)"/>
-      <circle r="2.6" fill="#FFFFFF" stroke="#FF4FB6" stroke-width="0.8"/>
+      <circle r="9" fill="url(#halo)"/>
+      <polygon points="0.00,-6.20 1.46,-1.92 5.90,-1.92 2.31,0.73 3.65,5.02 0.00,2.48 -3.65,5.02 -2.31,0.73 -5.90,-1.92 -1.46,-1.92"
+               fill="#FFFFFF" stroke="#FF4FB6" stroke-width="0.9" stroke-linejoin="round"/>
     </g>
   </defs>
 

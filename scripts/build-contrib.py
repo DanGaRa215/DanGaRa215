@@ -13,6 +13,7 @@ ghchart.rshah.org が返す SVG からマス目の座標とスコアを読み取
 そのまま表示でき、ghchart が落ちても README は壊れない。
 """
 
+import math
 import re
 import sys
 import urllib.request
@@ -30,6 +31,20 @@ DUR = 24                # 1周の秒数
 TRAVEL = 0.90           # このぶんだけ移動に使い、残りで草を生え直す
 EAT = 0.005             # 1マスが消えるまでの時間（周期に対する比）
 REGROW = 0.95           # ここから生え直しを始める
+
+BODY = 6                # 頭の後ろに続く体節の数
+HEAD_R = 6.2            # 星（頭）の外接半径
+SEG_R0, SEG_R1 = 4.6, 2.8   # 体節の半径。後ろほど細くして蛇らしくする
+
+
+def star_points(outer: float, inner_ratio: float = 0.42, n: int = 5) -> str:
+    """先端を上に向けた n 芒星の頂点列"""
+    pts = []
+    for k in range(n * 2):
+        rad = outer if k % 2 == 0 else outer * inner_ratio
+        ang = -math.pi / 2 + k * math.pi / n
+        pts.append(f"{rad * math.cos(ang):.2f},{rad * math.sin(ang):.2f}")
+    return " ".join(pts)
 
 # ghchart の色 -> スコア段階。CSS 変数に置き換えてテーマ切り替えできるようにする
 SCORE_COLORS = {
@@ -130,6 +145,38 @@ def main() -> int:
             f"</rect>"
         )
 
+    # 頭とそれに続く体節。同じ経路をたどらせ、開始時刻を1マスぶんずつ遅らせることで
+    # 後ろが追従して見える。円は回転対称なので rotate は使わず、
+    # ハイライトの位置を固定して立体感を保つ。
+    per_step = TRAVEL / (steps - 1)
+    tail_end = TRAVEL + BODY * per_step
+
+    def motion(lag: float) -> str:
+        return (
+            f'<animateMotion dur="{DUR}s" repeatCount="indefinite" calcMode="linear" '
+            f'keyPoints="0;0;1;1" keyTimes="0;{lag:.4f};{TRAVEL + lag:.4f};1" path="{path}"/>'
+            f'<animate attributeName="opacity" values="0;1;1;0;0" '
+            f'keyTimes="0;{lag:.4f};{tail_end:.4f};{min(tail_end + 0.02, 0.999):.4f};1" '
+            f'dur="{DUR}s" repeatCount="indefinite"/>'
+        )
+
+    snake = []
+    for i in range(BODY, 0, -1):          # 後ろの節から描き、頭が最前面に来るようにする
+        r = SEG_R0 + (SEG_R1 - SEG_R0) * (i - 1) / max(BODY - 1, 1)
+        snake.append(
+            f'<g opacity="0"><circle r="{r:.2f}" fill="url(#seg)"/>'
+            f'<ellipse cx="{-r * 0.30:.2f}" cy="{-r * 0.34:.2f}" rx="{r * 0.34:.2f}" ry="{r * 0.24:.2f}" '
+            f'fill="#FFFFFF" opacity="0.45"/>'
+            f"{motion(i * per_step)}</g>"
+        )
+    snake.append(
+        f'<g opacity="0">'
+        f'<polygon points="{star_points(HEAD_R)}" fill="url(#head)" '
+        f'stroke="#FFFFFF" stroke-width="0.7" stroke-linejoin="round"/>'
+        f'<polygon points="{star_points(HEAD_R * 0.40)}" fill="#FFFFFF" opacity="0.75"/>'
+        f"{motion(0)}</g>"
+    )
+
     nl = "\n      "
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{USER} contribution calendar">
   <title>{USER} contribution calendar</title>
@@ -151,11 +198,17 @@ def main() -> int:
   </style>
 
   <defs>
-    <linearGradient id="trail" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-34" y2="0">
-      <stop offset="0%"   stop-color="#D6117E" stop-opacity="0.95"/>
-      <stop offset="45%"  stop-color="#FF5FB5" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#FF9FD3" stop-opacity="0"/>
-    </linearGradient>
+    <!-- 左上を明るく右下を暗くして、平らな円を球に見せる -->
+    <radialGradient id="seg" cx="34%" cy="30%" r="72%">
+      <stop offset="0%"   stop-color="#FFCFE7"/>
+      <stop offset="45%"  stop-color="#FF5FB5"/>
+      <stop offset="100%" stop-color="#B8005E"/>
+    </radialGradient>
+    <radialGradient id="head" cx="34%" cy="28%" r="76%">
+      <stop offset="0%"   stop-color="#FFF0F7"/>
+      <stop offset="42%"  stop-color="#FF6EC7"/>
+      <stop offset="100%" stop-color="#D6117E"/>
+    </radialGradient>
   </defs>
 
   <!-- 背景は塗らない。ページの地色（ダークなら黒、ライトなら白）がそのまま透ける -->
@@ -186,19 +239,8 @@ def main() -> int:
 
     {nl.join(labels)}
 
-    <!-- 流れ星。rotate="auto" で進行方向を向くので、折り返しても尾が必ず後ろに伸びる -->
-    <g>
-      <g transform="rotate(180)">
-        <path d="M0 0 L-34 0" stroke="url(#trail)" stroke-width="3.4" stroke-linecap="round"/>
-        <circle r="3.4" fill="var(--star)"/>
-        <circle r="1.5" fill="#FFFFFF"/>
-      </g>
-      <animateMotion dur="{DUR}s" repeatCount="indefinite" rotate="auto"
-                     calcMode="linear" keyPoints="0;1;1" keyTimes="0;{TRAVEL};1"
-                     path="{path}"/>
-      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;{TRAVEL};{TRAVEL + 0.02};1"
-               dur="{DUR}s" repeatCount="indefinite"/>
-    </g>
+    <!-- 頭が星マークのスネーク。体節は1マスぶんずつ遅らせて追従させる -->
+    {nl.join(snake)}
   </g>
 </svg>
 """
