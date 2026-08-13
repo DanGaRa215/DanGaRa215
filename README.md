@@ -1,3 +1,5 @@
+<!-- ヘッダーからバッジまでのヒーロー部分だけを中央揃えにする。
+     ここより下は素の左揃えにして、読み物としての一貫性を保つ -->
 <div align="center">
 
 <img src="./assets/header.svg" alt="DanGaRa215 - Data Science | NLP | Recommendation" width="100%" />
@@ -8,6 +10,8 @@
 
 <a href="https://github.com/DanGaRa215"><img src="https://img.shields.io/badge/GitHub-D6117E?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=DanGaRa215.DanGaRa215&style=for-the-badge&left_text=PROFILE%20VIEWS&left_color=%23D6117E&right_color=%23FF9FD3" alt="Profile views" />
+
+</div>
 
 <br />
 
@@ -20,6 +24,26 @@
 Motto : 手を動かし、最後まで届ける
 ```
 
+### 日本語
+
+データサイエンスを学んでいる大学2年生です。自然言語処理と推薦システムを中心に、機械学習を「現場で実際に使えるかたち」にすることに関心があります。
+
+株式会社STREAM の AIデータ戦略開発部門で長期インターンをしていて、クライアントの営業支援に向けたデータの収集・整備・活用の仕組みづくりに取り組んでいます。一度きりの分析で終わらせず、継続して価値が出る形にすることを大切にしています。
+
+研究では、レビュー本文の感情分析と星評価を組み合わせた BERT ベースの飲食店推薦システムに取り組み、DEIM2026 で発表しました。ほかにも服装管理アプリ NewMee の技術とビジネスの橋渡し役、Jリーグ順位予測モデル、与信リスク予測コンペ（Aihack 2026）での特徴量エンジニアリングなどを経験しています。
+
+わからない領域でも、まず飛び込んで必要なことをその場で身につけながら進めるタイプです。
+
+### English
+
+I'm a second-year data science student focused on natural language processing and recommender systems, with an interest in turning machine learning into something that actually works in the field.
+
+I work as a long-term intern in the AI & Data Strategy division at STREAM, where I build the pipelines that collect, organise and apply data for client sales support. I care about making analysis that keeps delivering value rather than a one-off report.
+
+My research combines sentiment analysis of review text with star ratings in a BERT-based restaurant recommender, presented at DEIM2026. I've also bridged the technical and business sides of NewMee (a clothing scheduling app), built a J.League standings prediction model, and handled feature engineering for a credit default risk competition (Aihack 2026).
+
+I tend to jump into unfamiliar areas first and pick up what I need along the way.
+
 <br />
 
 ## <img src="https://img.shields.io/badge/-Skills-FF5FB5?style=flat-square" height="22" /> Skills
@@ -29,8 +53,6 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://img.shields.io/badge/Python-D6117E?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/SQL-FF5FB5?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
 
-<br />
-
 ### フレームワーク / ライブラリ
 
 <img src="https://img.shields.io/badge/PyTorch-D6117E?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
@@ -39,8 +61,6 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://img.shields.io/badge/NumPy-FF5FB5?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
 <img src="https://img.shields.io/badge/Matplotlib-FF9FD3?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
 
-<br />
-
 ### ツール / 環境
 
 <img src="https://img.shields.io/badge/Git-D6117E?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
@@ -48,8 +68,6 @@ Motto : 手を動かし、最後まで届ける
 <img src="https://img.shields.io/badge/Docker-D6117E?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
 <img src="https://img.shields.io/badge/Google%20Colab-FF5FB5?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
 <img src="https://img.shields.io/badge/VS%20Code-FF9FD3?style=for-the-badge&logoColor=white" alt="VS Code" />
-
-<br />
 
 ### 学習中 / 関心領域
 
@@ -74,5 +92,3 @@ Motto : 手を動かし、最後まで届ける
 <br />
 
 <img src="./assets/footer.svg" alt="Thanks for visiting!" width="100%" />
-
-</div>
