@@ -40,10 +40,10 @@ CATEGORIES = [
         ("Cursor", "cursor"),
     ]),
     ("skills-focus", [
-        ("機械学習", None),
-        ("自然言語処理", None),
-        ("データ可視化", None),
-        ("レコメンドシステム", None),
+        ("Machine Learning", None),
+        ("Natural Language Processing", None),
+        ("Data Visualization", None),
+        ("Recommender Systems", None),
     ]),
 ]
 

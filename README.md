@@ -58,7 +58,7 @@ I tend to jump into unfamiliar areas first and pick up what I need along the way
 
 ### FOCUS AREAS
 
-<img src="./assets/skills-focus.svg" alt="機械学習, 自然言語処理, データ可視化, レコメンドシステム" />
+<img src="./assets/skills-focus.svg" alt="Machine Learning, Natural Language Processing, Data Visualization, Recommender Systems" />
 
 <br />
 
@@ -70,8 +70,7 @@ I tend to jump into unfamiliar areas first and pick up what I need along the way
 
 ## <img src="https://img.shields.io/badge/-Stats-FF5FB5?style=flat-square" height="22" /> Stats
 
-<img src="./assets/stats.svg" alt="GitHub stats" height="210" />
-<img src="./assets/langs.svg" alt="Top languages" height="210" />
+<img src="./assets/stats.svg" alt="GitHub stats and top languages" width="100%" />
 
 <br />
 

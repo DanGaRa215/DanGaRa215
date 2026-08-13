@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" width="420" height="210" role="img" aria-label="DanGaRa215 GitHub stats">
-  <title>DanGaRa215 GitHub stats</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" width="880" height="210" role="img" aria-label="DanGaRa215 GitHub stats and top languages">
+  <title>DanGaRa215 GitHub stats and top languages</title>
   <style>
     svg {
       --head: #D6117E; --text: #B8005E; --value: #D6117E;
@@ -15,6 +15,7 @@
     }
   </style>
 
+  <g transform="translate(0, 0)">
   <rect x="1.5" y="1.5" width="417" height="207" rx="14"
         fill="none" stroke="#FF5FB5" stroke-width="3"/>
   <g stroke="var(--head)" stroke-width="3" stroke-linecap="round" fill="none">
@@ -31,19 +32,56 @@
   <text x="396" y="62" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">2</text>
   <circle cx="27" cy="82" r="3" fill="var(--dot)"/>
   <text x="38" y="86" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Commits (last year)</text>
-  <text x="396" y="86" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">195</text>
+  <text x="396" y="86" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">200</text>
   <rect x="16" y="97" width="388" height="22" rx="5" fill="var(--stripe)"/>
   <circle cx="27" cy="106" r="3" fill="var(--dot)"/>
   <text x="38" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Pull Requests (merged)</text>
-  <text x="396" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">41</text>
+  <text x="396" y="110" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">95</text>
   <circle cx="27" cy="130" r="3" fill="var(--dot)"/>
   <text x="38" y="134" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Issues</text>
-  <text x="396" y="134" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">5</text>
+  <text x="396" y="134" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">32</text>
   <rect x="16" y="145" width="388" height="22" rx="5" fill="var(--stripe)"/>
   <circle cx="27" cy="154" r="3" fill="var(--dot)"/>
   <text x="38" y="158" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Contributed to</text>
-  <text x="396" y="158" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">4</text>
+  <text x="396" y="158" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">8</text>
   <circle cx="27" cy="178" r="3" fill="var(--dot)"/>
   <text x="38" y="182" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Followers</text>
   <text x="396" y="182" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="var(--value)" text-anchor="end">5</text>
+  </g>
+  <g transform="translate(460, 0)">
+  <rect x="1.5" y="1.5" width="417" height="207" rx="14"
+        fill="none" stroke="#FF5FB5" stroke-width="3"/>
+  <g stroke="var(--head)" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M14 34 L14 20 Q14 14 20 14 L40 14"/>
+    <path d="M380 14 L400 14 Q406 14 406 20 L406 34"/>
+    <path d="M14 176 L14 190 Q14 196 20 196 L40 196"/>
+    <path d="M380 196 L400 196 Q406 196 406 190 L406 176"/>
+  </g>
+  <text x="24" y="34" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700"
+        fill="var(--head)" letter-spacing="2.4">TOP LANGUAGES</text>
+  <defs><clipPath id="barClip"><rect x="24" y="54" width="372" height="12" rx="6"/></clipPath></defs>
+  <rect x="24" y="54" width="372" height="12" rx="6" fill="var(--track)"/>
+  <g clip-path="url(#barClip)">
+    <rect x="24.00" y="54" width="327.52" height="12" fill="var(--l1)"/>
+    <rect x="351.52" y="54" width="32.66" height="12" fill="var(--l2)"/>
+    <rect x="384.19" y="54" width="5.07" height="12" fill="var(--l3)"/>
+    <rect x="389.26" y="54" width="4.20" height="12" fill="var(--l4)"/>
+    <rect x="393.46" y="54" width="1.31" height="12" fill="var(--l5)"/>
+  </g>
+  <rect x="24" y="87" width="10" height="10" rx="2.5" fill="var(--l1)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="96" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Python</text>
+  <text x="396" y="96" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">88.0%</text>
+  <rect x="24" y="109" width="10" height="10" rx="2.5" fill="var(--l2)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="118" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Jupyter Notebook</text>
+  <text x="396" y="118" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">8.8%</text>
+  <rect x="24" y="131" width="10" height="10" rx="2.5" fill="var(--l3)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">C++</text>
+  <text x="396" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">1.4%</text>
+  <rect x="24" y="153" width="10" height="10" rx="2.5" fill="var(--l4)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="162" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">Cython</text>
+  <text x="396" y="162" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">1.1%</text>
+  <rect x="24" y="175" width="10" height="10" rx="2.5" fill="var(--l5)" stroke="#FF5FB5" stroke-width="0.8"/>
+  <text x="42" y="184" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="var(--text)">C</text>
+  <text x="396" y="184" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="var(--value)" text-anchor="end">0.4%</text>
+  </g>
 </svg>

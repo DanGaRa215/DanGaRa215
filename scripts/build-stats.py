@@ -51,6 +51,8 @@ STYLE = """  <style>
 CARD_W = 420
 CARD_H = 210
 PAD = 24
+PANEL_GAP = 40                      # パネル同士の間隔
+TOTAL_W = CARD_W * 2 + PANEL_GAP    # 2枚を1枚のSVGに収めた全体幅
 
 QUERY = """
 query($login: String!) {
@@ -109,10 +111,10 @@ def graphql(query: str, variables: dict) -> dict:
 FONT = "'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 
 
-def card_open(title: str, label: str) -> str:
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CARD_W} {CARD_H}" width="{CARD_W}" height="{CARD_H}" role="img" aria-label="{esc(label)}">
-  <title>{esc(label)}</title>
-{STYLE}
+def card_open(title: str, x: float) -> str:
+    """パネル1枚ぶんの開きタグ。README のコンテナ幅(約830px)に420px×2が収まらず
+    縦に折り返してしまうため、2枚を1枚のSVGに並べて折り返しを起こさせない。"""
+    return f"""  <g transform="translate({x}, 0)">
   <rect x="1.5" y="1.5" width="{CARD_W - 3}" height="{CARD_H - 3}" rx="14"
         fill="none" stroke="#FF5FB5" stroke-width="3"/>
   <g stroke="var(--head)" stroke-width="3" stroke-linecap="round" fill="none">
@@ -138,7 +140,7 @@ def build_stats(d: dict) -> str:
         ("Followers", u["followers"]["totalCount"]),
     ]
 
-    parts = [card_open("GITHUB STATS", f"{USER} GitHub stats")]
+    parts = [card_open("GITHUB STATS", 0)]
     y = 62
     for i, (name, value) in enumerate(rows):
         # 行を1本おきに淡いピンクで塗り、数字を追いやすくする
@@ -156,7 +158,7 @@ def build_stats(d: dict) -> str:
         )
         y += 24
 
-    parts.append("</svg>\n")
+    parts.append("  </g>\n")
     return "".join(parts)
 
 
@@ -172,7 +174,7 @@ def build_langs(d: dict) -> str:
     total = sum(sizes.values())
     top = sorted(sizes.items(), key=lambda kv: -kv[1])[: len(LANG_COLORS)]
 
-    parts = [card_open("TOP LANGUAGES", f"{USER} top languages")]
+    parts = [card_open("TOP LANGUAGES", CARD_W + PANEL_GAP)]
 
     # 積み上げ横バー。角丸クリップで両端を丸める
     bar_x, bar_y, bar_w, bar_h = PAD, 54, CARD_W - PAD * 2, 12
@@ -206,21 +208,27 @@ def build_langs(d: dict) -> str:
         )
         y += 22
 
-    parts.append("</svg>\n")
+    parts.append("  </g>\n")
     return "".join(parts)
 
 
 def main() -> int:
     data = graphql(QUERY, {"login": USER})
 
-    for filename, content in (
-        ("stats.svg", build_stats(data)),
-        ("langs.svg", build_langs(data)),
-    ):
-        path = os.path.join(OUT_DIR, filename)
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(content)
-        print(f"wrote {path} ({len(content)} bytes)")
+    label = f"{USER} GitHub stats and top languages"
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {TOTAL_W} {CARD_H}" '
+        f'width="{TOTAL_W}" height="{CARD_H}" role="img" aria-label="{esc(label)}">\n'
+        f"  <title>{esc(label)}</title>\n{STYLE}\n"
+        + build_stats(data)
+        + build_langs(data)
+        + "</svg>\n"
+    )
+
+    path = os.path.join(OUT_DIR, "stats.svg")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"wrote {path} ({TOTAL_W}x{CARD_H}, {len(svg)} bytes)")
 
     return 0
 
