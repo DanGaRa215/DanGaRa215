@@ -17,13 +17,9 @@
 
 ## <img src="https://img.shields.io/badge/-About-FF5FB5?style=flat-square" height="22" /> About
 
-```text
-データサイエンス学部 データサイエンス学科 / 28卒
-
-Motto : 手を動かし、最後まで届ける
-```
-
 ### 日本語
+
+> 問いを見つけたら、まず動く。データで現場を変える。
 
 データサイエンスを学んでいる大学2年生です。自然言語処理と推薦システムを中心に、機械学習を「現場で実際に使えるかたち」にすることに関心があります。
 
@@ -36,6 +32,8 @@ Motto : 手を動かし、最後まで届ける
 趣味は K-POP で、特に aespa のカリナ推しです。aespa の日本初のショーケースにも参戦しました。
 
 ### English
+
+> Find the question, then move. Change the field with data.
 
 I'm a second-year data science student focused on natural language processing and recommender systems, with an interest in turning machine learning into something that actually works in the field.
 
