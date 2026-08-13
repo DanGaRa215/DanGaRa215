@@ -18,8 +18,7 @@
 ## <img src="https://img.shields.io/badge/-About-FF5FB5?style=flat-square" height="22" /> About
 
 ```text
-武蔵野大学 データサイエンス学部 データサイエンス学科 / 28卒
-株式会社STREAM  AIデータ戦略開発部門  長期インターン
+データサイエンス学部 データサイエンス学科 / 28卒
 
 Motto : 手を動かし、最後まで届ける
 ```
@@ -43,6 +42,12 @@ I work as a long-term intern in the AI & Data Strategy division at STREAM, where
 My research combines sentiment analysis of review text with star ratings in a BERT-based restaurant recommender, presented at DEIM2026.
 
 I tend to jump into unfamiliar areas first and pick up what I need along the way.
+
+### Hobby
+
+K-POP が好きで、特に aespa のカリナ推しです。aespa の日本初のショーケースにも参戦しました。
+
+I'm into K-POP — KARINA of aespa above all. I was there for aespa's first showcase in Japan.
 
 <br />
 
