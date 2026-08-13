@@ -30,27 +30,20 @@ ICON_URL = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{slug}.svg"
 CATEGORIES = [
     ("skills-languages", [
         ("Python", "python"),
-        ("SQL", "postgresql"),
-    ]),
-    ("skills-libraries", [
-        ("PyTorch", "pytorch"),
-        ("scikit-learn", "scikitlearn"),
-        ("pandas", "pandas"),
-        ("NumPy", "numpy"),
-        ("Matplotlib", None),        # simple-icons に無い
+        ("SQL", None),               # 言語であり製品ではないのでロゴは無い
     ]),
     ("skills-tools", [
         ("Git", "git"),
         ("GitHub", "github"),
-        ("Docker", "docker"),
-        ("Google Colab", "googlecolab"),
-        ("VS Code", "visualstudiocode"),
+        ("Jupyter", "jupyter"),
+        ("Claude Code", "claude"),
+        ("Cursor", "cursor"),
     ]),
-    ("skills-interests", [
-        ("LLM / RAG", "langchain"),
-        ("Hugging Face", "huggingface"),
-        ("Recommender Systems", None),   # 概念なのでロゴは無い
-        ("MLOps", "mlflow"),
+    ("skills-focus", [
+        ("機械学習", None),
+        ("自然言語処理", None),
+        ("データ可視化", None),
+        ("レコメンドシステム", None),
     ]),
 ]
 
@@ -71,10 +64,22 @@ NARROW = set("iIlj.,:;'|!")
 WIDE = set("mMWw@")
 
 
+def is_fullwidth(ch: str) -> bool:
+    """CJK（かな・漢字・全角記号）はラテン文字のおよそ2倍の字送りになる"""
+    o = ord(ch)
+    return (
+        0x3000 <= o <= 0x30FF      # 全角記号・ひらがな・カタカナ
+        or 0x3400 <= o <= 0x9FFF   # 漢字
+        or 0xFF00 <= o <= 0xFF60   # 全角英数記号
+    )
+
+
 def text_width(s: str) -> float:
     total = 0.0
     for ch in s:
-        if ch in NARROW:
+        if is_fullwidth(ch):
+            total += 1.02
+        elif ch in NARROW:
             total += 0.34
         elif ch in WIDE:
             total += 0.88

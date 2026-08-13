@@ -48,21 +48,17 @@ I tend to jump into unfamiliar areas first and pick up what I need along the way
 
 ## <img src="https://img.shields.io/badge/-Skills-FF5FB5?style=flat-square" height="22" /> Skills
 
-### 言語
+### LANGUAGES
 
 <img src="./assets/skills-languages.svg" alt="Python, SQL" />
 
-### フレームワーク / ライブラリ
+### TOOLS
 
-<img src="./assets/skills-libraries.svg" alt="PyTorch, scikit-learn, pandas, NumPy, Matplotlib" />
+<img src="./assets/skills-tools.svg" alt="Git, GitHub, Jupyter, Claude Code, Cursor" />
 
-### ツール / 環境
+### FOCUS AREAS
 
-<img src="./assets/skills-tools.svg" alt="Git, GitHub, Docker, Google Colab, VS Code" />
-
-### 学習中 / 関心領域
-
-<img src="./assets/skills-interests.svg" alt="LLM / RAG, Hugging Face, Recommender Systems, MLOps" />
+<img src="./assets/skills-focus.svg" alt="機械学習, 自然言語処理, データ可視化, レコメンドシステム" />
 
 <br />
 
