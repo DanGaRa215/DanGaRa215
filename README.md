@@ -33,6 +33,8 @@ Motto : 手を動かし、最後まで届ける
 
 わからない領域でも、まず飛び込んで必要なことをその場で身につけながら進めるタイプです。
 
+趣味は K-POP で、特に aespa のカリナ推しです。aespa の日本初のショーケースにも参戦しました。
+
 ### English
 
 I'm a second-year data science student focused on natural language processing and recommender systems, with an interest in turning machine learning into something that actually works in the field.
@@ -43,11 +45,7 @@ My research combines sentiment analysis of review text with star ratings in a BE
 
 I tend to jump into unfamiliar areas first and pick up what I need along the way.
 
-### Hobby
-
-K-POP が好きで、特に aespa のカリナ推しです。aespa の日本初のショーケースにも参戦しました。
-
-I'm into K-POP — KARINA of aespa above all. I was there for aespa's first showcase in Japan.
+Outside of work I'm into K-POP — KARINA of aespa above all. I was there for aespa's first showcase in Japan.
 
 <br />
 
