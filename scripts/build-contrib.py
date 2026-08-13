@@ -152,10 +152,12 @@ def main() -> int:
     tail_end = TRAVEL + BODY * per_step
 
     def motion(lag: float) -> str:
+        # opacity は 1 から始める。SMIL を再生しない環境ではフレーム0で固まるため、
+        # 0 から始めるとスネークが一切見えず「変わっていない」状態になる
         return (
             f'<animateMotion dur="{DUR}s" repeatCount="indefinite" calcMode="linear" '
             f'keyPoints="0;0;1;1" keyTimes="0;{lag:.4f};{TRAVEL + lag:.4f};1" path="{path}"/>'
-            f'<animate attributeName="opacity" values="0;1;1;0;0" '
+            f'<animate attributeName="opacity" values="1;1;1;0;0" '
             f'keyTimes="0;{lag:.4f};{tail_end:.4f};{min(tail_end + 0.02, 0.999):.4f};1" '
             f'dur="{DUR}s" repeatCount="indefinite"/>'
         )
@@ -164,13 +166,13 @@ def main() -> int:
     for i in range(BODY, 0, -1):          # 後ろの節から描き、頭が最前面に来るようにする
         r = SEG_R0 + (SEG_R1 - SEG_R0) * (i - 1) / max(BODY - 1, 1)
         snake.append(
-            f'<g opacity="0"><circle r="{r:.2f}" fill="url(#seg)"/>'
+            f'<g><circle r="{r:.2f}" fill="url(#seg)"/>'
             f'<ellipse cx="{-r * 0.30:.2f}" cy="{-r * 0.34:.2f}" rx="{r * 0.34:.2f}" ry="{r * 0.24:.2f}" '
             f'fill="#FFFFFF" opacity="0.45"/>'
             f"{motion(i * per_step)}</g>"
         )
     snake.append(
-        f'<g opacity="0">'
+        f'<g>'
         f'<polygon points="{star_points(HEAD_R)}" fill="url(#head)" '
         f'stroke="#FFFFFF" stroke-width="0.7" stroke-linejoin="round"/>'
         f'<polygon points="{star_points(HEAD_R * 0.40)}" fill="#FFFFFF" opacity="0.75"/>'
