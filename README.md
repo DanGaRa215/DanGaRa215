@@ -30,7 +30,7 @@ Motto : 手を動かし、最後まで届ける
 
 株式会社STREAM の AIデータ戦略開発部門で長期インターンをしていて、クライアントの営業支援に向けたデータの収集・整備・活用の仕組みづくりに取り組んでいます。一度きりの分析で終わらせず、継続して価値が出る形にすることを大切にしています。
 
-研究では、レビュー本文の感情分析と星評価を組み合わせた BERT ベースの飲食店推薦システムに取り組み、DEIM2026 で発表しました。ほかにも服装管理アプリ NewMee の技術とビジネスの橋渡し役、Jリーグ順位予測モデル、与信リスク予測コンペ（Aihack 2026）での特徴量エンジニアリングなどを経験しています。
+研究では、レビュー本文の感情分析と星評価を組み合わせた BERT ベースの飲食店推薦システムに取り組み、DEIM2026 で発表しました。
 
 わからない領域でも、まず飛び込んで必要なことをその場で身につけながら進めるタイプです。
 
@@ -40,7 +40,7 @@ I'm a second-year data science student focused on natural language processing an
 
 I work as a long-term intern in the AI & Data Strategy division at STREAM, where I build the pipelines that collect, organise and apply data for client sales support. I care about making analysis that keeps delivering value rather than a one-off report.
 
-My research combines sentiment analysis of review text with star ratings in a BERT-based restaurant recommender, presented at DEIM2026. I've also bridged the technical and business sides of NewMee (a clothing scheduling app), built a J.League standings prediction model, and handled feature engineering for a credit default risk competition (Aihack 2026).
+My research combines sentiment analysis of review text with star ratings in a BERT-based restaurant recommender, presented at DEIM2026.
 
 I tend to jump into unfamiliar areas first and pick up what I need along the way.
 
@@ -50,31 +50,19 @@ I tend to jump into unfamiliar areas first and pick up what I need along the way
 
 ### 言語
 
-<img src="https://img.shields.io/badge/Python-D6117E?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/SQL-FF5FB5?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
+<img src="./assets/skills-languages.svg" alt="Python, SQL" />
 
 ### フレームワーク / ライブラリ
 
-<img src="https://img.shields.io/badge/PyTorch-D6117E?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-<img src="https://img.shields.io/badge/scikit--learn-FF5FB5?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
-<img src="https://img.shields.io/badge/pandas-D6117E?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas" />
-<img src="https://img.shields.io/badge/NumPy-FF5FB5?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-<img src="https://img.shields.io/badge/Matplotlib-FF9FD3?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
+<img src="./assets/skills-libraries.svg" alt="PyTorch, scikit-learn, pandas, NumPy, Matplotlib" />
 
 ### ツール / 環境
 
-<img src="https://img.shields.io/badge/Git-D6117E?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-<img src="https://img.shields.io/badge/GitHub-FF5FB5?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-<img src="https://img.shields.io/badge/Docker-D6117E?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-<img src="https://img.shields.io/badge/Google%20Colab-FF5FB5?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
-<img src="https://img.shields.io/badge/VS%20Code-FF9FD3?style=for-the-badge&logoColor=white" alt="VS Code" />
+<img src="./assets/skills-tools.svg" alt="Git, GitHub, Docker, Google Colab, VS Code" />
 
 ### 学習中 / 関心領域
 
-<img src="https://img.shields.io/badge/LLM%20%2F%20RAG-D6117E?style=for-the-badge&logo=langchain&logoColor=white" alt="LLM / RAG" />
-<img src="https://img.shields.io/badge/Hugging%20Face-FF5FB5?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face" />
-<img src="https://img.shields.io/badge/Recommender%20Systems-D6117E?style=for-the-badge&logo=databricks&logoColor=white" alt="Recommender Systems" />
-<img src="https://img.shields.io/badge/MLOps-FF5FB5?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLOps" />
+<img src="./assets/skills-interests.svg" alt="LLM / RAG, Hugging Face, Recommender Systems, MLOps" />
 
 <br />
 
